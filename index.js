@@ -9,10 +9,13 @@ function getComputerChoice (){
     return computerChoice;
 }
 
-function playRound(computerChoice, playerChoice){
+function playRound(){
     let result;
+    let playerChoice = prompt("Enter your choice: ").toLowerCase();
+    let computerChoice = getComputerChoice();
+
     if(computerChoice === playerChoice){
-        return result = "Draw";
+        result = "It's a Draw!";
     }
 
     switch(playerChoice){
@@ -39,5 +42,28 @@ function playRound(computerChoice, playerChoice){
             break;
     }
 
+    console.log(result);
     return result;
 }
+
+function game(){
+    let winCounter = 0;
+    let loseCounter = 0;
+
+    for(let i = 0; i < 5; i++){
+        let roundResult = playRound();
+        if(roundResult[4] === 'W'){
+            winCounter++;
+        } else if (roundResult[4] === 'L'){
+            loseCounter++;
+        }
+    }
+
+    if(winCounter > loseCounter){
+        console.log("You Win! Congrats!");
+    } else {
+        console.log("You Lose! Good luck next time!");
+    }
+}
+
+game();
