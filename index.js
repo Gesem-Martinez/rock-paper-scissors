@@ -46,6 +46,7 @@ function playRound(){
     return result;
 }
 
+/*
 function game(){
     let winCounter = 0;
     let loseCounter = 0;
@@ -61,9 +62,12 @@ function game(){
 
     if(winCounter > loseCounter){
         console.log("You Win! Congrats!");
+    } else if(winCounter === loseCounter){
+        console.log("It's a Draw!");
     } else {
         console.log("You Lose! Good luck next time!");
     }
 }
 
-game();
+game();*/
+//playRound();
