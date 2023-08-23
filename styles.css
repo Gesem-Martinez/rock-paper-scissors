@@ -9,8 +9,16 @@ html{
 }
 
 body{
-    background-color: #141E46;
+    background-color: #252B48;
     text-align: center;
     color: #fff;
 }
+
+.title{
+    font-family: 'Lobster', cursive;
+    font-size: 80px;
+    margin: 40px auto;
+    color: #F7E987;
+}
+
 
