@@ -12,6 +12,11 @@ body{
     background-color: #252B48;
     text-align: center;
     color: #D8D9DA;
+
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .title{
@@ -19,6 +24,8 @@ body{
     font-size: 100px;
     margin: 50px auto 50px auto;
     color: #F7E987;
+
+    flex-grow: 1;
 }
 
 .buttons{
@@ -27,7 +34,8 @@ body{
     gap: 100px;
 
     font-family: 'Roboto Mono', monospace;
-    color: #D8D9DA;
+    color: #F7E987;
+    flex-grow: 3;
 }
 
 .button{
@@ -48,15 +56,7 @@ body{
 
 .button:hover{
     cursor: pointer;
-}
-
-.button-title{
-    font-family: 'Roboto Mono', monospace;
-    color: #D8D9DA;
-}
-
-p{
-    font-weight: bold;
+    opacity: 50%;
 }
 
 .rock{
@@ -69,4 +69,14 @@ p{
 
 .scissors{
     background-image: url("./images/scissors.svg");
+}
+
+p{
+    font-weight: bold;
+}
+
+footer{
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+    margin-top: auto;
 }
