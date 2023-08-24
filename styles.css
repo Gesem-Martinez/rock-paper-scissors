@@ -11,14 +11,62 @@ html{
 body{
     background-color: #252B48;
     text-align: center;
-    color: #fff;
+    color: #D8D9DA;
 }
 
 .title{
     font-family: 'Lobster', cursive;
-    font-size: 80px;
-    margin: 40px auto;
+    font-size: 100px;
+    margin: 50px auto 50px auto;
     color: #F7E987;
 }
 
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
 
+    font-family: 'Roboto Mono', monospace;
+    color: #D8D9DA;
+}
+
+.button{
+    height: 125px;
+    width: 125px;
+    margin-right: 10px;
+
+    background-size: cover;
+    background-color: #445069;
+
+    border: 3px solid #5B9A8B;
+    border-radius: 16px;
+}
+
+.button:last-of-type{
+    margin-right: 0;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+.button-title{
+    font-family: 'Roboto Mono', monospace;
+    color: #D8D9DA;
+}
+
+p{
+    font-weight: bold;
+}
+
+.rock{
+    background-image: url("./images/rock.svg");
+}
+
+.paper{
+    background-image: url("./images/paper.svg");
+}
+
+.scissors{
+    background-image: url("./images/scissors.svg");
+}
