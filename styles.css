@@ -54,7 +54,7 @@ body{
     margin-right: 0;
 }
 
-.button:hover{
+.player-buttons .button:hover{
     cursor: pointer;
     opacity: 50%;
 }
@@ -71,7 +71,7 @@ body{
     background-image: url("./images/scissors.svg");
 }
 
-p{
+.score{
     font-weight: bold;
 }
 
@@ -79,4 +79,8 @@ footer{
     font-family: 'Lobster', cursive;
     font-size: 20px;
     margin-top: auto;
+}
+
+.active{
+    background-color: #F7E987CC;
 }

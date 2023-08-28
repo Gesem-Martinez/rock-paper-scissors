@@ -9,9 +9,9 @@ function getComputerChoice (){
     return computerChoice;
 }
 
-function playRound(){
+function playRound(buttonId){
     let result;
-    let playerChoice = prompt("Enter your choice: ").toLowerCase();
+    let playerChoice = buttonId;
     let computerChoice = getComputerChoice();
 
     if(computerChoice === playerChoice){
@@ -45,6 +45,12 @@ function playRound(){
     console.log(result);
     return result;
 }
+
+const playerButtons = document.querySelector(".player-buttons").querySelectorAll("button");
+playerButtons.forEach((button) => {
+    let buttonId = button.id.split('-')[1];
+    button.addEventListener("click", () => playRound(buttonId));
+});
 
 /*
 function game(){
