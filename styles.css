@@ -32,6 +32,7 @@ body{
     display: flex;
     justify-content: center;
     gap: 100px;
+    height: fit-content;
 
     font-family: 'Roboto Mono', monospace;
     color: #F7E987;
@@ -73,6 +74,14 @@ body{
 
 .score{
     font-weight: bold;
+}
+
+.results{
+    flex-grow: 10;
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+    color: #F7E987;
+
 }
 
 footer{
